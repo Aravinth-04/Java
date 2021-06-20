@@ -20,3 +20,6 @@ public class AddTwoRows {
        System.out.println(Arrays.toString(c));
     }
 }
+
+
+//output: [30, 60, 30, 40, 50]
