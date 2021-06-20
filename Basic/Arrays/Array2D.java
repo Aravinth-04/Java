@@ -4,7 +4,7 @@ public class Array2D {
        Array2D o=new Array2D();
        
        
-       int d[][] = {
+       int d[][] = {                     //jagged Array
     		   {1,2,3,4},
     		   {1,2,3},
     		   {1,2,3,6}
