@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class AddTwoRows {
+    public static void main(String[] args) {
+       int a[]={10,20,30,40,50};
+       int b[]={20,40};
+       int maxlength=   (a.length>b.length )? a.length:b.length;
+       int smallength=(a.length>b.length )? b.length:a.length;
+       int i=0;
+       int c[]=new int[maxlength];
+       while(i<smallength)
+       {
+        c[i]=a[i]+b[i];
+       i++;
+       }
+       while(i<maxlength)                           //i value continue with 2
+       {
+         c[i]=a[i];
+       }
+       System.out.println(Arrays.toString(c));
+    }
+}
