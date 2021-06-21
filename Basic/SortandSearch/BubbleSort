@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class BubbleSort {
+    public static void main(String[] args) {          //bubble sort
+     int []a = {990,88,77,55,44,33,22,11};
+            //  0   1   2 3  4  5  6  7
+         int j=1;
+         while(j<a.length)
+         {
+         int i=0,temp=0;
+         while(i<a.length-j)   
+          {
+        
+            if(a[i]>a[i+1])
+            {
+              temp=a[i];
+              a[i]=a[i+1];
+              a[i+1]=temp;
+            }
+            i++;
+          }
+         j++;
+         }
+         System.out.println(Arrays.toString(a));
+         }
+    }
