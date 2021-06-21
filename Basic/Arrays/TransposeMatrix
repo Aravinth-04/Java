@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class TransposeMatrix {
+    public static void main(String[] args) {   
+          int a[][] ={{1,5,3},
+                      {2,3,4},                                                    //transpose matrix
+                      {4,5,6}};            // 1 5 3
+                                          //  2 3 4
+                                        //    4 5 6
+                   //    00=00  10=01 20=02 
+                  //     01=10  11=11 21=12
+                 //      02=20  12=21 22=22
+                 
+          int t[][]=new int[a.length][3];       
+       for(int row=0;row<a.length;row++)
+       {
+         for(int col=0;col<a[row].length;col++ )
+         {
+            t[row][col]=a[col][row];
+         }
+       }
+       for(int row=0;row<a.length;row++)
+       {
+         for(int col=0;col<a[row].length;col++ )
+         {
+            System.out.print(t[row][col]);               // output:   1 2 4                                                      
+         }                                              //            5 3 5
+         System.out.println(" ");                      //             3 4 6
+       }
+       
+                 
+    }
+}
