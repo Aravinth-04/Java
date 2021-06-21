@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class NegativeValueToStoreAnotherArray {
+	public static void main (String[] args)
+	{
+		int a[]= {-10,20,30,40,-50,-60};                     //negative value to store another array
+		         // 0  1  2  3  4   5
+		int i;
+		int count = 0; 
+		for(i=0;i<a.length;i++)               //find the length for negative storing array
+		{
+			if(a[i]<0)
+			{
+				count++;
+			}
+	    }
+	  int []b=new int[count];           
+	  int j=0; 
+	  for(i=0;i<a.length;i++)
+	  {
+		  if(a[i]<0)
+		  {
+			  b[j]=a[i];                        //----@
+			  j++;
+		  }
+	  }
+		System.out.println(Arrays.toString(b));
+		
+    
+    
+    // output :  [-10, -50, -60]
