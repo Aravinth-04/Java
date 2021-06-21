@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class FindTwoMaxAndMin {
+public class FindTwoMaxAndMin {                                                                                           //wrapper class Integer.MAX_VALUE , Integer.MIN_VALUE 
 
 	public static void main(String[] args) {
 		
