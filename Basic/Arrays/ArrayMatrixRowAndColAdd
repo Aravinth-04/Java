@@ -1,0 +1,54 @@
+
+import java.util.Scanner;
+public class ArrayMatrixRowAndColAdd {
+			public static void main(String[] args) {                                           //  1 1 1    =3 --row total
+		        Scanner sc=new Scanner(System.in);											                    //   2 2 2
+		        int a[][]=new int[2][3];												                         	 //    |
+		        int i,j;																                                	//     3 ---column total
+		        for( i=0;i<a.length;i++)
+		        {
+		            for( j=0;j<a[i].length;j++)
+		            {
+		                 a[i][j]=sc.nextInt(); 
+		            }
+		        }
+		       for( i=0;i<a.length;i++)
+		        {
+		            for( j=0;j<a[i].length;j++)
+		            {
+		                System.out.print(" "+a[i][j]);
+		            }
+		            System.out.println();
+		        }
+		       
+//		       for( i=0;i<a.length;i++)
+//		        {
+//		    	   int total=0;                                  //row total in matrix array .all rows print total
+//		            for( j=0;j<a[i].length;j++)
+//		            {
+//		            	total=total+a[i][j];
+//		                System.out.print(" ");
+//		            }
+//		            System.out.println(total);
+//		        }
+		       //--------------------------------------------
+//		        int tot=0;                                        //row total in matrix array. use one row to add total
+//		         i=0;j=0;
+//		         while(j<a.length)
+//		         {
+//		        	 tot=tot+a[i][j];
+//		        	 j++;
+//		         }
+//		        System.out.println(tot);
+		     //  -------------------------------------------------
+//		        int tot=0;                                        //column total in matrix array. use one column to add total
+//		         i=0;j=0;
+//		         while(i<a.length)
+//		         {
+//		        	 tot=tot+a[i][j];
+//		             i++;
+//		         }
+//		        System.out.println(tot);
+		       	       
+			}
+}
