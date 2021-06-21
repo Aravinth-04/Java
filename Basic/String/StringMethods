@@ -1,0 +1,51 @@
+import java.util.Arrays;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+//								//string comparison methods
+//		String a=new  ("Java");
+//		String b="java";
+//		StringBuffer c=new StringBuffer("Java");
+//		System.out.println("using equals : "+(a.equals(b)));                           //equals
+//	    System.out.println("Using equalsIgnoneCase : "+(a.equalsIgnoreCase(b)));       //equalsIgnoreCase
+//	    System.out.println("Using compare : "+(a.compareTo(b)));                       //compareTo
+//	    System.out.println("Using compareToIgnoreCase : "+(a.compareToIgnoreCase(b)));  //compareToIgnoreCase
+//	    System.out.println("Using startsWith : "+(a.startsWith("J")));         			//startsWith 
+//	    System.out.println("Using endsWith : "+(a.endsWith("a"))); 						//endsWith
+//	    System.out.println("Using startWith index : "+(a.startsWith("a",1)));           //startWith index
+//		System.out.println("Using contentEquals : "+(a.contentEquals(b)));             //contentEquals - it is char sequence
+//		System.out.println("Using contentEquals : "+(a.contentEquals(c))); 				//contentEquals - it is string and using StringBuffer
+//	                           
+								//string searching methods
+		
+//		String[] a= {"ram","ravi","kumar"};
+//	    String[] b= {"ram","ravi","kumar"};
+//	    System.out.println("using equals : "+(Arrays.equals(a,b)));
+		                       
+								//stringBuffer and stringBuilder
+		StringMethods o=new StringMethods();
+		String a[]= {"ram","ravi","ramki"};
+		o.test(a);
+		StringBuffer ob=new StringBuffer("zz12");
+		ob.insert(0, "aravinth");
+		ob.replace(0, 2, "yyy");
+		ob.reverse();  
+		System.out.println(ob);
+		
+		
+
+
+	}
+
+	private void test(String[] a) {
+		// TODO Auto-generated method stub
+		String sentence=" ";
+		StringBuffer ob=new StringBuffer();
+		for(String b:a)
+		{
+		 ob.append(b);
+		}
+		System.out.println(ob);
+	}
+}
