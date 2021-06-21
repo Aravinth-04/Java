@@ -32,10 +32,6 @@ public class StringMethods {
 		ob.replace(0, 2, "yyy");
 		ob.reverse();  
 		System.out.println(ob);
-		
-		
-
-
 	}
 
 	private void test(String[] a) {
