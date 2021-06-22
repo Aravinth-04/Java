@@ -1,0 +1,39 @@
+import java.util.*;
+public class CountNoOfEachCharacter {
+	public static void main(String[] args) {
+//		int a[] = { 10, 20, 30, 40, 20, 30, 20, 50,100,10,0 };
+		         // 0   1    2   3  4   5    6  7
+		String e="ravi kumar";                                //String to convert the Character Array
+	    char [] a=e.toCharArray();
+		int c[] = new int[a.length];         //It is totally similar to the CountFrequencyOfElement in Array .  
+
+		for(int i=0;i<a.length;i++)
+		{
+		int count=1	;
+        for(int j=i+1;j<a.length;j++)
+         {
+        	if(a[i]==a[j])
+        	{
+        		count++;
+        		c[j]=-1;
+        	} 
+		 }
+             if(c[i]!=-1)
+             {
+             c[i]=count;
+             System.out.println(a[i] +" is occurs "+ count);
+             }   
+		}
+		System.out.println(Arrays.toString(c));
+	}
+}
+    /*ouput:   
+              r is occurs 2
+              a is occurs 2
+              v is occurs 1
+              i is occurs 1
+                is occurs 1
+              k is occurs 1
+              u is occurs 1
+              m is occurs 1
+              [2, 2, 1, 1, 1, 1, 1, 1, -1, -1]   */
