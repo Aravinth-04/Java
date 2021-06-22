@@ -1,0 +1,34 @@
+import java.util.*;
+public class CountFrequencyOfElement {                                             //CountFrequencyOfElement
+	public static void main(String[] args) {
+		int a[] = { 10, 20, 30, 40, 20, 30, 20, 50,100,10,0 };
+		         // 0   1    2   3  4   5    6  7
+		int c[] = new int[a.length];
+		for(int i=0;i<a.length;i++)
+		{
+		    int count=1	;
+        for(int j=i+1;j<a.length;j++)
+         {
+        	 if(a[i]==a[j])
+        	 {
+        	  	count++;
+        	  	c[j]=-1;
+        	 }
+		     }
+             if(c[i]!=-1)
+             {
+             c[i]=count;
+             System.out.println(a[i] +" is occurs "+ count);
+             }       
+		}
+		System.out.println(Arrays.toString(c));
+	}
+}
+/* output : 10 is occurs 2
+            20 is occurs 3
+            30 is occurs 2
+            40 is occurs 1
+            50 is occurs 1
+            100 is occurs 1
+            0 is occurs 1
+            [2, 3, 2, 1, -1, -1, -1, 1, 1, -1, 1]  */
