@@ -1,4 +1,4 @@
-//Example 1
+//Example 1							                                     //Greekforgreeks                                       														  
 // Input:
 // string1 = "computer"
 // string2 = "cat"
