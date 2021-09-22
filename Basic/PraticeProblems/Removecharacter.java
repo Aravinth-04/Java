@@ -1,11 +1,16 @@
+//Example 1
+// Input:
+// string1 = "computer"
+// string2 = "cat"
+// Output: "ompuer"
+// Explanation: After removing characters(c, a, t) from string1 we get "ompuer".
 
-Input:
-string1 = "computer"
-string2 = "cat"
-Output: "ompuer"
-Explanation: After removing characters(c, a, t)
-from string1 we get "ompuer".
-
+//Example 2
+// Input:
+// string1 = "occurrence"
+// string2 = "car"
+// Output: "ouene"
+// Explanation: After removing characters (c, a, r) from string1 we get "ouene".
 
 public class Removecharacter
 {
