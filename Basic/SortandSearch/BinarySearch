@@ -7,7 +7,7 @@ public class BinarySearch {
             int min=0,max=a.length-1;
               int key=40;
              int mid =(max+min)/2;
-            while(max>=min)
+            while(max<=min)
             {
               if(key==a[mid])
               {
