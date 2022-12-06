@@ -20,5 +20,4 @@ public class PredicateDemoString {
 			  System.out.println(x); 
 		}
 	}
-
 }
