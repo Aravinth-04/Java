@@ -23,5 +23,4 @@ public class PredicateDemo {
 				System.out.println(x1);
 		}
 	}
-
 }
